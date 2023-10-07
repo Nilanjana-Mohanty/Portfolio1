@@ -20,19 +20,20 @@
 
 }
 #content{
-    display: flex;
+   margin-top: 7vh;
+   
+   display: flex;
     height: 80vh;
     width: 70vw;
     background-color: #d6e3f8;
     align-items: center;
-    position: fixed;
-    top: 15vh;
-    justify-content: center;
-    justify-items: center;
+    top: 25vh;
+    
+   
 }
 
 #box{
-    position:fixed ;
+    position:absolute;
     top: 15vh;
     right: 5vw;
     height: 350px;
@@ -40,12 +41,12 @@
     background-color:#9d5363 ;
 }
 #pic{
-    position:fixed ;
+   position: absolute;
     top: 20vh;
     right: 2vw;
     height: 350px;
     width: 250px;
-   background-color: #582c4d;
+   
     background-image: url("photo1.jpg");
     background-size: cover;
     
@@ -57,4 +58,63 @@ a{
 }
 a:hover{
     text-decoration: underline;
+}
+p{
+    text-align: center;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+#about{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 5vh 2vw 5vh 1vw;
+   height: 90vh;
+    width: 100vw;
+    background-color: #fef5ef;
+} 
+#edu{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 5vh 2vw 5vh 1vw;
+    height: 90vh;
+    width: 100vw;
+    background-color:#d6e3f8;
+}
+#skills{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 5vh 2vw 5vh 1vw;
+    height: 90vh;
+    width:100vw;
+    background-color:#fef5ef;
+}
+#contact{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 5vh 2vw 0vh 1vw;
+    height: 90vh;
+    width: 100vw;
+    background-color:#d6e3f8;
+}
+#header{
+    position: fixed;
+}
+#footer{
+    position: fixed;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
 }
