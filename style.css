@@ -1,19 +1,9 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/*
-.navbar{
-    height : 8vh;
-    background-color: #fef5ef;
-   display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    font-weight: 250;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    
-}*/
+
 
 
 
@@ -27,6 +17,7 @@
     align-items: center;
     top: 25vh;
     justify-content: center;
+    color: #252627;
    
 }
 
@@ -36,7 +27,7 @@
     right: 5vw;
     height: 350px;
     width: 250px;
-    background-color:#9d5363 ;
+    background-color:#904e55 ;
 
     
 }
@@ -77,6 +68,8 @@ h2{
    height: 90vh;
     width: 100vw;
     background-color: #fef5ef;
+    
+    font-size: 1.2rem;
 } 
 #edu{
     align-items: center;
@@ -85,7 +78,8 @@ h2{
     margin: 5vh 2vw 5vh 1vw;
     height: 90vh;
     width: 100vw;
-    background-color:#d6e3f8;
+    background-color:#d5b9b2;
+    font-size: 1.2rem;
 }
 #skills{
     align-items: center;
@@ -95,20 +89,27 @@ h2{
     height: 90vh;
     width:100vw;
     background-color:#fef5ef;
+    font-size: 1.2rem;
 }
 #contact{
-    align-items: center;
+    align-items:center;
     justify-content: center;
+
     display: flex;
     margin: 5vh 2vw 0vh 1vw;
     height: 90vh;
     width: 100vw;
-    background-color:#d6e3f8;
+    background-color:#564e58;
+    color: #eee5e5;
+    font-size: 1.2rem;
 }
-
+footer a{
+    color:#eee5e5;
+}
     
-#footer{
+ #footer{
     position: fixed;
+    
 }
 h2{
     font-size: 40px;
@@ -118,12 +119,7 @@ h1{
     font-size: 50px;
 }
 
-/*
-@media(min-width:700px){
-    .checkbox{
-        display: none;
-    }
-*/
+
 
 header{
     position: fixed;
@@ -135,6 +131,7 @@ header{
     align-items: center;
     justify-content: space-around;
     background-color: #fef5ef;
+    box-shadow: 0 1px 4px #564e58;
    
 }
 li{
@@ -143,15 +140,16 @@ li{
 .logo{
     display: flex;
     align-items: center;
-    color: #9d5363;
+    color: #582c4d;
     font-size: 5vh ;
     font-weight: bolder;
 }
+
 .navbar{
     display: flex;
 }
 .navbar a{
-    color: black;
+    color: #564e58;
    font-size: 1.2rem;
     font-weight: 500;
     padding:  5px 0;
@@ -160,15 +158,11 @@ li{
 
 }
 .navbar a:hover{
-    color: #9d5363 ;
+    background-color: #d5b9b2;
+    color: #252627;
+    border-radius: 10%;
 }
-#menu-icon{
-    font-size: 25px;
-    color: #9d5363;
-    cursor: pointer;
-    z-index: 1001;
-    display: none;
-}
+
 
 @media(max-width: 1280px){
         header{
