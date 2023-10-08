@@ -37,7 +37,8 @@
     height: 350px;
     width: 250px;
     background-color:#9d5363 ;
-    display: none;
+
+    
 }
 #pic{
    position: absolute;
@@ -45,7 +46,7 @@
     right: 2vw;
     height: 350px;
     width: 250px;
-    display: none;
+    
     background-image: url("photo1.jpg");
     background-size: cover;
     
@@ -129,7 +130,7 @@ header{
     width: 100vw;
     height: 8vh;
     top: 0;
-    
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -172,7 +173,7 @@ li{
 @media(max-width: 1280px){
         header{
             padding: 14px 2%;
-            transition: .2s;
+            
         }
         .navbar a{
             padding: 5px 0;
@@ -180,12 +181,46 @@ li{
         }
 }
 
-@media(max-width:850px){
+@media(max-width:860px){
     header{
         display: flex;
 
     }
     .navbar a{
         display: none;
+    }
+    #box{
+        height: 280px;
+        width: 200px;
+    }
+    #pic{
+        height: 280px;
+        width: 200px;
+    }
+}
+
+@media(min-width:700)and(max-width:860px){
+
+#box{
+        height: 175px;
+        width: 125px;
+    }
+    #pic{
+        height: 175px;
+        width: 125px;
+    }
+
+}
+@media(max-width: 650px){
+
+    #box{
+        top:57vh;
+        height: 175px;
+        width: 125px;
+    }
+    #pic{
+        top:62vh;
+        height: 175px;
+        width: 125px;
     }
 }
