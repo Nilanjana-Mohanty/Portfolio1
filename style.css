@@ -161,6 +161,7 @@ li{
     background-color: #d5b9b2;
     color: #252627;
     border-radius: 10%;
+    transition: 0.3s;
 }
 
 
