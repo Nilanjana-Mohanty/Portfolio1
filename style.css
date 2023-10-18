@@ -181,9 +181,9 @@ li{
         display: flex;
 
     }
-    .navbar a{
+ /*   .navbar a{
         display: none;
-    }
+    } */
     #box{
         height: 280px;
         width: 200px;
@@ -218,4 +218,43 @@ li{
         height: 175px;
         width: 125px;
     }
+}
+.togglebtn{
+        font-size: 1.5rem;
+        font-weight:bolder;
+        cursor: pointer;
+        color: #904e55;
+        display: none;
+}
+@media only screen and (max-width: 860px){
+     .navbar{
+        width: 60%;
+        height: 0px;
+        background: #d5b9b2;
+        position: absolute;
+        top: 12vh;
+        text-align: center;
+        z-index: 2;
+        display: block;
+        right: 1rem;
+        border-radius: 5%;
+        transition: 0.5s;
+        overflow: hidden;
+        transition: height cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .navbar.open{
+        
+        height: 200px;
+    }
+
+    .navbar li{
+            
+            margin-top: 15px;
+            margin-bottom: 15px;
+    }
+    .togglebtn{
+        display: block;
+    }
+
+    
 }
