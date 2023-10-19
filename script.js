@@ -2,7 +2,7 @@ const toggleBtn = document.querySelector('.toggle_btn');
 const toggleBtnIcon = document.querySelector('.toggle_btn i');
 const dropMenu = document.querySelector('.navbar');
 
-toggleBtn.onclick = function(){
+function toggledrop(){
     dropMenu.classList.toggle('open')
     const isOpen =dropMenu.classList.contains('open')
 

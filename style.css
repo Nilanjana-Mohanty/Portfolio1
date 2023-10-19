@@ -2,9 +2,26 @@
     padding: 0;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+    
+   
 }
 
+:root{
 
+    --background_a : #d6e3f8;
+    --background_b : #fef5ef;
+    --background_c : #d5b9b2;
+    --background_d : #564e58;
+    --color_e : #252627;
+    --color_f : #904e55;
+    --color_g : #eee5e5;
+    --color-logo : #582c4d;
+    --head_text : black;
+
+
+
+}
 
 
 #content{
@@ -13,11 +30,11 @@
    display: flex;
     height: 80vh;
     width: 70vw;
-    background-color: #d6e3f8;
+    background-color: var(--background_a);
     align-items: center;
     top: 25vh;
     justify-content: center;
-    color: #252627;
+    color: var(--color_e);
    
 }
 
@@ -27,7 +44,7 @@
     right: 5vw;
     height: 350px;
     width: 250px;
-    background-color:#904e55 ;
+    background-color: var(--color_f) ;
 
     
 }
@@ -43,7 +60,7 @@
     
 }
 a{
-    color:black;
+    color: var(--head_text);
     text-decoration: none;
     
 }
@@ -67,7 +84,7 @@ h2{
     margin: 5vh 2vw 5vh 1vw;
    height: 90vh;
     width: 100vw;
-    background-color: #fef5ef;
+    background-color: var(--background_b);
     
     font-size: 1.2rem;
 } 
@@ -78,7 +95,7 @@ h2{
     margin: 5vh 2vw 5vh 1vw;
     height: 90vh;
     width: 100vw;
-    background-color:#d5b9b2;
+    background-color: var(--background_c);
     font-size: 1.2rem;
 }
 #skills{
@@ -88,7 +105,7 @@ h2{
     margin: 5vh 2vw 5vh 1vw;
     height: 90vh;
     width:100vw;
-    background-color:#fef5ef;
+    background-color: var(--background_b);
     font-size: 1.2rem;
 }
 #contact{
@@ -99,12 +116,12 @@ h2{
     margin: 5vh 2vw 0vh 1vw;
     height: 90vh;
     width: 100vw;
-    background-color:#564e58;
-    color: #eee5e5;
+    background-color: var(--background_d);
+    color: var(--color_g);
     font-size: 1.2rem;
 }
 footer a{
-    color:#eee5e5;
+    color: var(--color_g);
 }
     
  #footer{
@@ -130,8 +147,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #fef5ef;
-    box-shadow: 0 1px 4px #564e58;
+    background-color: var(--background_b);
+    box-shadow: 0 1px 4px var(--background_d);
    
 }
 li{
@@ -140,7 +157,7 @@ li{
 .logo{
     display: flex;
     align-items: center;
-    color: #582c4d;
+    color: var(--color-logo);
     font-size: 5vh ;
     font-weight: bolder;
 }
@@ -149,7 +166,7 @@ li{
     display: flex;
 }
 .navbar a{
-    color: #564e58;
+    color: var(--background_d);
    font-size: 1.2rem;
     font-weight: 500;
     padding:  5px 0;
@@ -158,8 +175,8 @@ li{
 
 }
 .navbar a:hover{
-    background-color: #d5b9b2;
-    color: #252627;
+    background-color: var(--background_c);
+    color: var(--color_e);
     border-radius: 10%;
     transition: 0.3s;
 }
@@ -205,32 +222,40 @@ li{
         width: 125px;
     }
 
+
+
 }
 @media(max-width: 650px){
 
     #box{
-        top:57vh;
-        height: 175px;
-        width: 125px;
+        top:65vh;
+        height: 210px;
+        width: 150px;
+        
     }
     #pic{
-        top:62vh;
-        height: 175px;
-        width: 125px;
+        top:67vh;
+        height: 210px;
+        width: 150px;
+        
     }
+    #content{
+        width: 100%;
+    }
+
 }
-.togglebtn{
+.toggle_btn{
         font-size: 1.5rem;
         font-weight:bolder;
         cursor: pointer;
-        color: #904e55;
+        color: var(--color_f);
         display: none;
 }
 @media only screen and (max-width: 860px){
      .navbar{
         width: 60%;
         height: 0px;
-        background: #d5b9b2;
+        background: var(--background_b);
         position: absolute;
         top: 12vh;
         text-align: center;
@@ -252,7 +277,7 @@ li{
             margin-top: 15px;
             margin-bottom: 15px;
     }
-    .togglebtn{
+    .toggle_btn{
         display: block;
     }
 
