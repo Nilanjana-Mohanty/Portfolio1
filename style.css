@@ -7,8 +7,10 @@
    
 }
 
-:root{
 
+
+:root{
+    
     --background_a : #d6e3f8;
     --background_b : #fef5ef;
     --background_c : #d5b9b2;
@@ -18,12 +20,56 @@
     --color_g : #eee5e5;
     --color-logo : #582c4d;
     --head_text : black;
-
-
-
+    --body_bg : white;
+    --nav_text : #564e58;
+    --icon_col : #3d002b;
+    --icon_hov: #d5b9b2;
+    transition: 0.45s;
 }
 
+.darkTheme{
+    transition: 0.45s;
+    --background_a : #797691;
+    --background_b : #2c365e;
+    --background_d : #3d002b;
+    --background_c : #3d314a;
+    --color_e : #222826;
+    --color_f : #684756;
+    --color_g : #eee5e5;
+    --color-logo : #d9d9e5;
+    --head_text : white;
+    --nav_text : #e0e1dd;
+    --body_bg : #222826;
+    --icon_col : #eee5e5;
+    --icon_hov : #797691;
+}
 
+body{
+    background-color: var(--body_bg) ;
+    transition: 0.5s;
+    
+}
+
+.icon i{
+        font-size: 33px;
+        font-weight: bolder;
+        color: var(--icon_col);
+        transition: 0.5s;
+        cursor: pointer;
+}
+.icon i:hover{
+
+    height: 65px;
+    width : 65px;
+    border-radius: 50%;
+    background-color: var(--icon_hov);
+
+}
+#home{
+    top: 0px;
+    position: fixed;
+    
+}
 #content{
    margin-top: 7vh;
    
@@ -35,7 +81,8 @@
     top: 25vh;
     justify-content: center;
     color: var(--color_e);
-   
+    transition: 0.5s;
+    
 }
 
 #box{
@@ -45,7 +92,7 @@
     height: 350px;
     width: 250px;
     background-color: var(--color_f) ;
-
+    transition: 0.5s;
     
 }
 #pic{
@@ -85,7 +132,8 @@ h2{
    height: 90vh;
     width: 100vw;
     background-color: var(--background_b);
-    
+    color: var(--head_text);
+    transition: 0.5s;
     font-size: 1.2rem;
 } 
 #edu{
@@ -96,7 +144,10 @@ h2{
     height: 90vh;
     width: 100vw;
     background-color: var(--background_c);
+    color: var(--head_text);
     font-size: 1.2rem;
+    transition: 0.5s;
+    
 }
 #skills{
     align-items: center;
@@ -106,7 +157,9 @@ h2{
     height: 90vh;
     width:100vw;
     background-color: var(--background_b);
+    color: var(--head_text);
     font-size: 1.2rem;
+    transition: 0.5s;
 }
 #contact{
     align-items:center;
@@ -119,9 +172,11 @@ h2{
     background-color: var(--background_d);
     color: var(--color_g);
     font-size: 1.2rem;
+    transition: 0.5s;
 }
 footer a{
     color: var(--color_g);
+    
 }
     
  #footer{
@@ -148,8 +203,9 @@ header{
     align-items: center;
     justify-content: space-around;
     background-color: var(--background_b);
-    box-shadow: 0 1px 4px var(--background_d);
-   
+    box-shadow: 0 1px 2px var(--icon_col);
+    transition: 0.5s;
+    
 }
 li{
     list-style: none;
@@ -160,13 +216,14 @@ li{
     color: var(--color-logo);
     font-size: 5vh ;
     font-weight: bolder;
+    transition: 0.5s;
 }
 
 .navbar{
     display: flex;
 }
 .navbar a{
-    color: var(--background_d);
+    color: var(--nav_text);
    font-size: 1.2rem;
     font-weight: 500;
     padding:  5px 0;
@@ -175,8 +232,8 @@ li{
 
 }
 .navbar a:hover{
-    background-color: var(--background_c);
-    color: var(--color_e);
+    background-color: var(--icon_hov);
+    color: var(--icon_col);
     border-radius: 10%;
     transition: 0.3s;
 }
@@ -245,11 +302,12 @@ li{
 
 }
 .toggle_btn{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight:bolder;
         cursor: pointer;
-        color: var(--color_f);
+        color: var(--icon_col);
         display: none;
+        transition: 0.5s;
 }
 @media only screen and (max-width: 860px){
      .navbar{
@@ -266,9 +324,10 @@ li{
         transition: 0.5s;
         overflow: hidden;
         transition: height cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        
     }
     .navbar.open{
-        
+        transition: 0.5s;
         height: 200px;
     }
 
@@ -279,7 +338,26 @@ li{
     }
     .toggle_btn{
         display: block;
+        transition: 0.5s;
     }
 
     
+}
+
+.connect{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    width: 50%;
+    margin-top: 40px;
+    
+    
+}
+#leftCon{
+    float: left;
+
+}
+
+#rightCon{
+    float: right;
 }
